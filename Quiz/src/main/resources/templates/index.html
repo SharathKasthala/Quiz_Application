@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Management System</h1>
+        <div class="button-container">
+            <button onclick="viewQuestion()">View Question</button>
+            <button onclick="viewQuestionsByCategory()">View Questions by Category</button>
+            <button onclick="addQuestion()">Add Questions</button>
+            <button onclick="createQuiz()">Create Quiz</button>
+            <button onclick="attemptQuiz()">Attempt Quiz</button>
+            <button onclick="calculateQuiz()">Calculate Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        function viewQuestion() {
+            window.location.href = "http://localhost:8080/view-question";
+        }
+
+        function viewQuestionsByCategory() {
+            window.location.href = "http://localhost:8080/view-questions-by-category";
+        }
+
+        function addQuestion() {
+            window.location.href = "http://localhost:8080/question/add";
+        }
+
+        function createQuiz() {
+            window.location.href = "http://localhost:8080/create-quiz";
+        }
+
+        function attemptQuiz() {
+            window.location.href = "http://localhost:8080/attempt-quiz";
+        }
+
+        function calculateQuiz() {
+            window.location.href = "http://localhost:8080/calculate-quiz";
+        }
+    </script>
+</body>
+</html>
